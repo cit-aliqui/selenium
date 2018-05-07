@@ -8,4 +8,3 @@
 ```
 # mvn clean install "-Dremote=true" "-DseleniumGridURL=http://<USERNAME-OF-ACCOUNT>:<ACCESS-KEY-YOUR-ACCOUNT>@ondemand.saucelabs.com:80/wd/hub"
 ``` 
-# selenium
