@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 20.212 s <<< FAILURE! - in TestSuite
+createStudent(framework.CrudStudent)  Time elapsed: 13.263 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='Virat Kohli']"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.38.551601 (edb21f07fc70e9027c746edd3201443e011a61ed),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'workstation', ip: '10.142.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-693.21.1.el7.x86_64', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.551601 (edb21f07fc70e9027c746edd3201443e011a61ed), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1548_15139}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=66.0.3359.117, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=12ce2b1856a64e66827cfeffb3a3fc38, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 12ce2b1856a64e66827cfeffb3a3fc38
+*** Element info: {Using=xpath, value=//td[text()='Virat Kohli']}
+	at framework.CrudStudent.createStudent(CrudStudent.java:59)
+

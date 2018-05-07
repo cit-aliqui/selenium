@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="1" ignored="0" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="19488" started-at="2018-05-07T02:11:44Z" finished-at="2018-05-07T02:12:04Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="19488" started-at="2018-05-07T02:11:44Z" finished-at="2018-05-07T02:12:04Z">
+      <class name="framework.CrudStudent">
+        <test-method status="PASS" signature="instantiateDriverObject()[pri:0, instance:framework.CrudStudent@6615435c]" name="instantiateDriverObject" is-config="true" duration-ms="10" started-at="2018-05-07T02:11:44Z" finished-at="2018-05-07T02:11:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateDriverObject -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.CrudStudent@6615435c]" name="beforeTest" is-config="true" duration-ms="4642" started-at="2018-05-07T02:11:44Z" finished-at="2018-05-07T02:11:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="verifyStudentManditoryFields()[pri:1, instance:framework.CrudStudent@6615435c]" name="verifyStudentManditoryFields" duration-ms="920" started-at="2018-05-07T02:11:49Z" finished-at="2018-05-07T02:11:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStudentManditoryFields -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:framework.CrudStudent@6615435c]" name="clearCookies" is-config="true" duration-ms="288" started-at="2018-05-07T02:11:50Z" finished-at="2018-05-07T02:11:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+        <test-method status="FAIL" signature="createStudent()[pri:2, instance:framework.CrudStudent@6615435c]" name="createStudent" duration-ms="13238" started-at="2018-05-07T02:11:50Z" depends-on-methods="framework.CrudStudent.verifyStudentManditoryFields" finished-at="2018-05-07T02:12:03Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='Virat Kohli']"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.38.551601 (edb21f07fc70e9027c746edd3201443e011a61ed),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'workstation', ip: '10.142.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-693.21.1.el7.x86_64', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.551601 (edb21f07fc70e9027c746edd3201443e011a61ed), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1548_15139}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=66.0.3359.117, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=12ce2b1856a64e66827cfeffb3a3fc38, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 12ce2b1856a64e66827cfeffb3a3fc38
+*** Element info: {Using=xpath, value=//td[text()='Virat Kohli']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='Virat Kohli']"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.38.551601 (edb21f07fc70e9027c746edd3201443e011a61ed),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'workstation', ip: '10.142.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-693.21.1.el7.x86_64', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.551601 (edb21f07fc70e9027c746edd3201443e011a61ed), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1548_15139}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, hasMetadata=true, handlesAlerts=true, databaseEnabled=false, version=66.0.3359.117, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=12ce2b1856a64e66827cfeffb3a3fc38, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 12ce2b1856a64e66827cfeffb3a3fc38
+*** Element info: {Using=xpath, value=//td[text()='Virat Kohli']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at framework.CrudStudent.createStudent(CrudStudent.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createStudent -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:framework.CrudStudent@6615435c]" name="clearCookies" is-config="true" duration-ms="148" started-at="2018-05-07T02:12:03Z" finished-at="2018-05-07T02:12:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+        <test-method status="SKIP" signature="editStudent()[pri:3, instance:framework.CrudStudent@6615435c]" name="editStudent" duration-ms="0" started-at="2018-05-07T02:12:04Z" depends-on-methods="framework.CrudStudent.createStudent" finished-at="2018-05-07T02:12:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CrudStudent.editStudent()[pri:3, instance:framework.CrudStudent@6615435c] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CrudStudent.editStudent()[pri:3, instance:framework.CrudStudent@6615435c] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editStudent -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.CrudStudent@6615435c]" name="afterTest" is-config="true" duration-ms="212" started-at="2018-05-07T02:12:04Z" finished-at="2018-05-07T02:12:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="deleteStudent()[pri:4, instance:framework.CrudStudent@6615435c]" name="deleteStudent" duration-ms="0" started-at="2018-05-07T02:12:04Z" depends-on-methods="framework.CrudStudent.editStudent" finished-at="2018-05-07T02:12:04Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CrudStudent.deleteStudent()[pri:4, instance:framework.CrudStudent@6615435c] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CrudStudent.deleteStudent()[pri:4, instance:framework.CrudStudent@6615435c] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteStudent -->
+        <test-method status="PASS" signature="closeDriverObjects()[pri:0, instance:framework.CrudStudent@6615435c]" name="closeDriverObjects" is-config="true" duration-ms="0" started-at="2018-05-07T02:12:04Z" finished-at="2018-05-07T02:12:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriverObjects -->
+      </class> <!-- framework.CrudStudent -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
