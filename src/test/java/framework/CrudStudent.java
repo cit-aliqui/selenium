@@ -24,7 +24,7 @@ public class CrudStudent extends DriverFactory {
 		
 		driver=DriverFactory.getDriver();
 		driver.manage().window().maximize();
-		driver.get("http://104.196.102.77/student/");
+		driver.get("http://IPADDRESS/student/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
